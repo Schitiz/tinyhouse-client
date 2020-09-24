@@ -25,7 +25,7 @@ export const MenuItems = ({ viewer, setViewer }: Props) => {
       if (data && data.logOut) {
         setViewer(data.logOut);
         sessionStorage.removeItem('token');
-        displaySuccessNotification("You've successfully logges out!");
+        displaySuccessNotification("You've successfully logged out!");
       }
     },
     onError: () => {
@@ -50,7 +50,7 @@ export const MenuItems = ({ viewer, setViewer }: Props) => {
         <Item key="/logout">
           <div onClick={handleLogOut}>
             <LogoutOutlined />
-            Profile
+            Log Out
           </div>
         </Item>
       </SubMenu>
